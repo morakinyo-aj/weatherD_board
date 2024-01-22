@@ -1,0 +1,16 @@
+{
+  "name": "working_code",
+  "version": "1.0.0",
+  "description": "try_to_put_on_server",
+  "main": "database.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2",
+    "mongoose": "^8.1.0"
+  }
+}

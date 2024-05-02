@@ -76,6 +76,7 @@ try{
 
 
 
+
 app.post('/addWeatherData', async (req, res) => {
   const { temperature, location } = req.body;
 
@@ -92,6 +93,11 @@ app.post('/addWeatherData', async (req, res) => {
     res.status(500).json({ error: 'Error saving weather data' });
   }
 });
+
+app.post('*', async(req,res) =>{
+  res.send("This page does not exist")
+})
+
 
 app.listen(PORT, () => {
   console.log(`Server is running on port ${PORT}`);

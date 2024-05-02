@@ -94,7 +94,7 @@ app.post('/addWeatherData', async (req, res) => {
   }
 });
 
-app.post('*', async(req,res) =>{
+app.get('*', async(req,res) =>{
   res.send("This page does not exist")
 })
 
